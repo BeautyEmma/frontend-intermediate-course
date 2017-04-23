@@ -46,7 +46,7 @@ section, article, aside, footer, header, nav, main {
 /*  reset css  */
 /*--------------reset結束------------------*/
 .wrap{
-    height: 100vh;
+    height: 120vh;
     margin: auto;
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("../img/bg.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("../img/bg.jpg");
@@ -63,8 +63,8 @@ section, article, aside, footer, header, nav, main {
     width: 300px;
     position: relative;
     float: left;
-    margin-left: 2%;
-    margin-top: 2%;
+    margin-left: 3%;
+    margin-top: 3%;
     background-color: rgba(208, 205, 205, 0.21);
     border: 1px solid #393939;
 }
