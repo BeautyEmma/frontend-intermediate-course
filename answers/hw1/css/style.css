@@ -1,174 +1,62 @@
-<!--
-//note 每一個方格的寬度為 300 px，高度不限，但每個方格的高度必須一樣
-//note 一排有三個方格
-//note 不需做 RWD，可以直接假設螢幕寬度會在 1000 px 以上
-//note 因為背景圖片太亮，所以背景圖片上面必須疊一層透明度為 50% 的黑色
-//note 背景圖片必須保持不動（background-attachment: fixed）
-//note 作業成品需要有九個方格，你可以做完一個之後複製九遍即可
-//note 必須可以滾動-->
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, button, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-,
-samp,
-small,
-strikestrong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embedfigure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
+img {
+  border: 0; }
 
+:focus {
+  outline: 0; }
 
-/* HTML5 display-role reset for older browsers */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
+input, button, textarea, select, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit; }
+
+code, kbd, samp, tt {
+  font-size: 100%; }
+
+/*purpose To enable resizing for IE */
+/*branch For IE6-Win, IE7-Win */
+input, button, textarea, select {
+  *font-size: 100%; }
 
 body {
-    line-height: 1;
-}
+  line-height: 180%; }
 
-ol,
-ul {
-    list-style: none;
-}
+ol, ul, li {
+  list-style: none; }
 
-blockquote,
-q {
-    quotes: none;
-}
+:link, :visited, ins {
+  text-decoration: none; }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
+/*HTML5 tag*/
+section, article, aside, footer, header, nav, main {
+  display: block; }
 
-a {
-    text-decoration: none;
-}
-
-body {
-    font-family: 微軟正黑體;
-}
-
-input {
-    border-style: none;
-}
-
-
+/*  reset css  */
 /*--------------reset結束------------------*/
 .wrap{
-    max-width: 1280px;
-    height: 1000px;
-    
+    height: 100vh;
     margin: auto;
-    
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("../img/bg.jpg");
-    
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("../img/bg.jpg");
     background-attachment: fixed;
 }
 
 .main{
     width: 1000px;
-    margin-left: 8%;
+    margin: auto;
     padding-top: 1%;
-    
 }
 
 .block{
@@ -196,12 +84,12 @@ p{
     color: white;
     margin-left: 25%;
     font-size: 18px;
-    line-height: 18px;
+    line-height: 30px;
     margin-top: -3%;
 }
 
 .first{
-    margin-top: 6%;
+    margin-top: 5%;
     width: 200px;
 }
 
